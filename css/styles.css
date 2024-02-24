@@ -1,0 +1,327 @@
+/* ============== Common styles ==============*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    cursor: pointer;
+}
+img{
+    display: block;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background: #fff;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* ==============/Common styles ==============*/
+
+/* ============== Page Header styles ==============*/
+.page-header{
+    border-bottom: 1px solid #e7e9fc;
+}
+.page-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        margin-right: 76px;
+}
+.logo-text{
+    color: #2e2f42;
+}
+.nav-list{
+    display: flex;
+    gap: 40px;
+}
+.nav-list-link{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #2e2f42;
+        letter-spacing: 0.02em;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+}
+.nav-list-link:hover,
+.nav-list-link:focus {
+    color: #404bbf;
+
+}
+.contacts-studio{
+    font-style: normal;
+}
+.contacts-studio-list{
+    display: flex;
+    gap: 40px;
+}
+.contacts:hover,
+.contacts:focus{
+   color: #404bbf;
+
+}
+.contacts{
+   color: #434455;
+   line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+/* ==============/Page Header styles ==============*/
+
+/* ============== Hero Section styles ==============*/
+.hero{
+    background: #2e2f42;
+    padding: 188px 0;
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+     url(/images/hero_image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    
+}
+
+.main-title{
+    font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 0.02em;
+        max-width: 496px; 
+        margin-bottom: 48px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+}
+.btn{
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ffffff;
+    background: #4d5ae5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    padding-left: 32px;
+    padding-right: 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btn:hover,
+.btn:focus{
+    background-color: #404BBF;
+    
+}
+
+/* ============== /Hero Section styles ==============*/
+
+/* ============== Benefits Section styles ==============*/
+.container { 
+max-width: 1158px;
+padding-left: 15px; 
+padding-right: 15px; 
+margin-left:auto;  
+margin-right: auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.benefits{
+    padding: 120px 0;
+}
+
+
+.section-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-transform: capitalize;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin-bottom: 72px;
+}
+
+.benefits-list{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.benefits-list-title{
+    margin-bottom: 8px;
+}
+.benefits-list-item{
+    width: calc((100% - 72px) / 4);
+}
+.benefits-list-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+.benefits-list-text{
+        font-size: 16px;
+        line-height: 1.5;
+        color: #434455;
+        letter-spacing: 0.02em;
+}
+/* ============== /Benefits Section styles ==============*/
+
+/* ============== Team Section styles ==============*/
+.team-section{
+    background: #f4f4fd;
+    padding: 120px 0;
+}
+.team-list{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.team-list-item{
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-person-container{
+    padding: 32px 0;
+}
+.team-person-fullname{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        text-align: center;
+        margin-bottom: 8px;
+}
+.team-person-position{
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        color: #434455;
+        letter-spacing: 0.02em;
+        text-align: center;
+}
+
+/* ==============/Team Section styles ==============*/
+
+/* ==============Portfolio styles ==============*/
+.portfolio{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.project-name{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+       color: #2e2f42;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+.portfolio-list{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+.project-name-container{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+.portfolio-list-item{
+    width: calc((100% - 48px) / 3);
+}
+.project-direction{
+        font-size: 16px;
+        line-height: 1.5;
+        color: #434455;
+        letter-spacing: 0.02em;
+}
+/* ==============/Portfolio styles ==============*/
+/* ============== Page Footer styles ==============*/
+.page-footer{
+background: #2e2f42;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.logo-footer{
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+.logo-footer-text{
+    color: #f4f4fd;
+}
+.page-footer-text{
+        font-size: 16px;
+        line-height: 1.5;
+        color: #f4f4fd;
+        letter-spacing: 0.02em;
+        max-width: 264px;
+}
+
+/* ==============/Page Footer styles ==============*/
