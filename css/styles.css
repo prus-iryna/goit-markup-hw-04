@@ -50,6 +50,20 @@ body{
 /* ============== Page Header styles ==============*/
 .page-header{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+}
+.nav-menu-link:hover::after{
+    content:"";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+
 }
 .page-nav{
     display: flex;
@@ -86,6 +100,8 @@ body{
         display: block;
         padding-top: 24px;
         padding-bottom: 24px;
+        position: relative;
+        padding: 24px 0;
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
@@ -122,13 +138,13 @@ body{
     padding: 188px 0;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
      url(/images/hero_image.jpg);
+     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
-    
+   
 }
+
 
 .main-title{
     font-family: "Roboto", sans-serif;
@@ -221,6 +237,20 @@ margin-right: auto;
         color: #434455;
         letter-spacing: 0.02em;
 }
+.icons-benefits{
+    display: flex;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+
+}
+.benefits-list-item{
+    width: calc((100%- 72) / 4);
+}
 /* ============== /Benefits Section styles ==============*/
 
 /* ============== Team Section styles ==============*/
@@ -236,7 +266,8 @@ margin-right: auto;
 .team-list-item{
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 .team-person-container{
     padding: 32px 0;
@@ -258,7 +289,35 @@ margin-right: auto;
         color: #434455;
         letter-spacing: 0.02em;
         text-align: center;
+        margin-bottom: 8px;
 }
+.team-social-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.team-social-list-item{
+    width: 40px;
+    height: 40px;
+}
+.team-social-list-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:#4d5ae5 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-list-icon{
+    fill: #f4f4fd;
+}
+.team-social-list-link:hover,
+.team-social-list-link:focus{
+    background-color: #404bbf;
+}
+
 
 /* ==============/Team Section styles ==============*/
 
@@ -289,11 +348,48 @@ margin-right: auto;
 .portfolio-list-item{
     width: calc((100% - 48px) / 3);
 }
+.portfolio-list-item:hover,
+.portfolio-list-item:focus{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
+}
+
+.portfolio-images-container:hover .portfolio-overlay{
+    transform: translateY(0%);
+}
 .project-direction{
         font-size: 16px;
         line-height: 1.5;
         color: #434455;
         letter-spacing: 0.02em;
+}
+.portfolio-images-container{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e7e9fc;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.portfolio-overlay-text
+{
+    padding-left: 32px;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 164px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
 }
 /* ==============/Portfolio styles ==============*/
 /* ============== Page Footer styles ==============*/
@@ -323,5 +419,43 @@ padding-bottom: 100px;
         letter-spacing: 0.02em;
         max-width: 264px;
 }
+.social-media-container{
+    box-sizing:border-box;
 
+}
+.social-media-text{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+        max-width: 208px;
+        margin-bottom: 16px;
+}
+.footer-social-list{
+    display: flex;
+    gap: 16px;
+}
+.footer-social-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-list-link{
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social-list-icon {
+    fill: #f4f4fd;
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+ background-color: #31d0aa;;}
 /* ==============/Page Footer styles ==============*/
